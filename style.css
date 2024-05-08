@@ -1,0 +1,390 @@
+
+body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+/* GALLERY DESIGNS */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* HOME PAGE DESIGNS */
+.img-fluid{
+    filter: blur(1px) brightness(90%)
+}
+.overlay-text {
+    color: #fff;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: left;
+    padding-left: 100px;
+    box-sizing: border-box;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);  
+
+}
+.overlay-text h1{
+    font-family: "Playfair Display", serif;
+    font-size: 53px;
+    font-weight: 800;
+
+}
+
+@media (max-width: 768px) {
+    .overlay-text {
+        display: none;
+    }
+    .mobile-text {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1497px) {
+    .overlay-text {
+        font-size: 24px;
+        font-weight: 800;
+        padding: 0;
+    }
+    .mobile-text {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+/* NAVBAR DESIGNS */
+.navbar {
+    background-color: #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 0.5rem 1rem; 
+}
+.navbar {
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    width: 100%; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.navbar img {
+    max-height: 60px;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255, 255, 255, 0.75)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>'); 
+}
+
+.nav-link {
+    color: #FFFFFF;
+    transition: color 0.3s; 
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    background-color: #1f1f20; 
+    border: none; 
+}
+
+.dropdown-item.nav-link {
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+}
+
+.dropdown-item.nav-link:hover {
+    background-color: #FFD700;
+
+
+    /* OTHER DESIGNS */
+}
+.container {
+    margin: 0 auto; 
+    padding: 40px; 
+    text-align: center; 
+}
+ 
+p {
+    color: #000000; 
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    font-size: 28px; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+ 
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; 
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+ 
+    p {
+        font-size: 14px; 
+    }
+    h1 {         
+        font-size: 1.5rem; 
+        top: -10%; 
+    }     
+    h3 {         
+        font-size: 0.8rem; 
+    } 
+
+}
+/* Services design*/
+.service-section {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px; 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5); 
+}
+
+#section1 { background-image: url("Gallery/service5.jpg"); }
+#section2 { background-image: url("Gallery/service1.jpg"); }
+#section3 { background-image: url("Gallery/service2.jpg"); }
+#section4 { background-image: url("Gallery/service3.jpg"); }
+#section5 { background-image: url("Gallery/service4.jpg"); }
+
+.service-title {
+    font-size: 72px; 
+    font-family: "Playfair Display", serif;
+
+    color: #FFD700; 
+    margin-bottom: 20px;
+}
+
+.service-description {
+    font-size: 36px; 
+    color: #FFFFFF;
+    max-width: 80%; 
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .service-title {
+        font-size: 32px; 
+    }
+    .service-description {
+        font-size: 16px; 
+    }
+
+    .service-section {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px; 
+        background-size: cover;
+        background-position: center;
+        color: #fff; 
+        text-align: center;
+        box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5); 
+    }
+}
+
+
+
+/* About us map responsive */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.head {
+    font-family: "Playfair Display", serif;
+    color: #0056b3;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.contents p{
+    font-size: 22px;
+}
+
+.header {
+    background-color: #000000; 
+    padding: 20px 0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 36px; 
+    color: #FFD700; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    margin: 0; 
+    padding: 10px 0;
+}
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 24px; 
+    }
+    .header {
+        padding: 15px 0; 
+    }
+}
+
+footer {
+    background-color: #000000;
+}
+
+@media (max-width: 768px) {
+    .form-label,
+    .form-control {
+        float: none; /* Disable floating on small screens */
+        width: 100%; /* Full width for readability */
+        text-align: left; /* Align text normally */
+        margin-right: 0; /* Remove margin */
+    }
+
+    .btn {
+        float: none; /* Center button under form fields */
+        display: block; /* Ensure it spans the full width */
+        width: 100%;
+    }
+}
+
+#contactForm {
+    width: 100%; /* Sets the width of the form */
+    padding: 20px; /* Adds space inside the form */
+    border: 1px solid #ccc; /* Adds a border around the form */
+    border-radius: 8px; /* Rounds the corners of the form */
+    background-color: #f9f9f9; /* Sets a light grey background color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle shadow to the form */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Adds space between form groups */
+}
+
+.form-label {
+    float: left;
+    display: block; /* Makes the label a block element to ensure it takes its own line */
+    margin-bottom: 5px; /* Adds a little space below the label */
+    color: #333; /* Dark gray color for the text */
+    font-weight: bold; /* Makes the label text bold */
+}
+
+.form-control {
+    width: 100%; /* Ensures input and textarea take full width of the form group */
+    padding: 8px; /* Adds padding inside the input/textarea for better text visibility */
+    border: 1px solid #ddd; /* Light gray border for the inputs */
+    border-radius: 4px; /* Slightly rounds the borders of the inputs and textarea */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.btn {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center-aligns the text inside the button */
+    display: inline-block; /* Makes the button inline-block */
+    font-size: 16px; /* Sets the font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border-radius: 4px; /* Rounds the button corners */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* img slider designs and positioning */
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; 
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%  , 0%, 0.25);
+
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}

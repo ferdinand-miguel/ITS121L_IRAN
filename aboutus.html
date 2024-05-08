@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.U. Foronda Trading</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <!-- Bootstrap! -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAVBAR! -->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+        <img src="Gallery/logo.png" class="d-inline-block align-top" width="100" height="60">
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active"> <a href="index.html" class="nav-link ">Home</a></li>
+                <li class="nav-item dropdown"> <a href="services.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item nav-link page-scroll" style="text-align: center; color: #ffffff;" href="services.html#section1">Palay Procurement</a></li>
+                        <li><a class="dropdown-item nav-link page-scroll" style="text-align: center; color: #ffffff;" href="services.html#section2">Rice Sales</a></li>
+                        <li><a class="dropdown-item nav-link page-scroll" style="text-align: center; color: #ffffff;" href="services.html#section3">Agricultural Supplies</a></li>
+                        <li><a class="dropdown-item nav-link page-scroll" style="text-align: center; color: #ffffff;" href="services.html#section4">Farm Services</a></li>
+                        <li><a class="dropdown-item nav-link page-scroll" style="text-align: center; color: #ffffff;" href="services.html#section5">Delivery Services</a></li>
+                    </ul>   </li>
+                <li class="nav-item "> <a href="gallery.html" class="nav-link ">Gallery</a></li>
+                <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+    
+            </ul>
+        </div>
+            
+        </div>
+    </nav>
+
+    <!-- Text on the about us page -->
+    <div class="header">
+        <h1 class="text-center">About Us</h1>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="head mb-4 mt=5">About G.U Foronda Trading</h1>
+        <div class="row">
+            <div class="content col-md-12">
+                <p>Founded with a passion for agriculture and a commitment to supporting local farmers, G.U Foronda Trading has been a trusted name in the Philippine agricultural industry for years.</p>
+                <p>Our story began with a simple mission: to bridge the gap between farmers and buyers, ensuring fair prices and efficient transactions for all parties involved. Today, we continue to uphold this mission by providing a wide range of products and services tailored to the needs of our farming community.</p>
+                <p>At G.U Foronda Trading, we pride ourselves on our integrity, reliability, and dedication to customer satisfaction. With a team of experienced professionals and a fleet of modern equipment, we are equipped to handle all aspects of the agricultural supply chain, from procurement to delivery.</p>
+                <p>Join us in our journey to empower farmers, promote sustainable agriculture, and contribute to the prosperity of rural communities across the Philippines.</p>
+            </div>
+        </div>
+
+        <!-- This is where we inserted the google maps for G.U Foronda Trading -->
+        <h1 class="head mb-4 mt-5">Contact Us</h1>
+        <div class="contacts row">
+            <div class="content col-md-8">
+                <div class="map-responsive">
+                    <img src="Gallery/imgmap.png" usemap="#image-map">
+
+                    <map name="image-map">
+                        <area target="_blank" alt="G.U. Foronda Trading" title="G.U. Foronda Trading" href="https://maps.app.goo.gl/m4yWwfzLaRaEmhqq8" coords="476,371,53" shape="circle">
+                </div>
+            </div>
+            <div class="contents col-md-4">
+                <p><strong>Location:</strong><br>
+                    086 Villa Gracia, Buguey, Cagayan, 3511
+                </p>
+                <p><strong>Business Hours:</strong><br>
+                    Monday - Saturday:<br> 
+                    7:00 AM - 5:00 PM<br>
+                    Sunday:<br>
+                    CLOSED
+                </p>
+                <p><strong>Get a Qoute:</strong><br>
+                    guforondahardware@yahoo.com.ph<br> 
+                    Globe +63 915 7039 378<br>
+                    Smart  +63 939 4230 345<br>
+                    
+                </p>
+            </div>
+        </div>
+        <h1 class="head mt-5" >Get a Qoute</h1>
+        <div class="container mb-6">
+            <div class="row justify-content-center">
+                <div class="col-md-12"> <!-- This column is centered and takes up half the width on medium devices -->
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+
+<!-- Footer! -->
+    <footer class="bg-dark text-white mt-4">
+        <div class="container py-4">
+            
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="text-secondary small">© 2024 G.U. Foronda Trading. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
